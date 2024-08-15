@@ -1,0 +1,39 @@
+### Get All Notes
+GET http://localhost:8000/api/notes
+Content-Type: application/json
+
+###
+
+### Get Note by ID
+GET http://localhost:8000/api/notes/NIzoW
+Content-Type: application/json
+
+###
+
+### Add a New Note
+POST http://localhost:8000/api/notes
+Content-Type: application/json
+
+{
+    "title": "New Note",
+    "body": "This is the body of the new note."
+}
+
+###
+
+### Edit a Note by ID
+PUT http://localhost:8000/api/notes/NIzoW
+Content-Type: application/json
+
+{
+    "title": "Updated Note Title",
+    "body": "This is the updated body of the note."
+}
+
+###
+
+### Delete a Note by ID (Replace {id} with the actual ID)
+DELETE http://localhost:8000/api/notes/NIzoW
+Content-Type: application/json
+
+###
